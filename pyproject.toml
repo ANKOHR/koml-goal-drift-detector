@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "koml-goal-drift-detector"
+version = "0.1.0"
+description = "Deterministic supervision from explicit objective and activity inputs"
+requires-python = ">=3.10"
+
+[project.scripts]
+kgdd = "koml_goal_drift_detector.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["koml_goal_drift_detector*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

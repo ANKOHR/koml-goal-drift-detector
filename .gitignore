@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.kgdd-results.json
+demo/
+*-codex.log
+*-launch.py
+*-prompt.txt
