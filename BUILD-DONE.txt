@@ -1,0 +1,6 @@
+KOML Goal Drift Detector build complete, 1 October 2026
+Test count: 30 passed (python -m pytest -q).
+Local implementation commit hash: 94fc62ab8590121d2b0059832d0d284c889cbaf7
+The completion-record commit follows this implementation commit; git rev-parse HEAD gives the current tip.
+
+Built a standard-library Python kgdd CLI with fixtures, run, report, check and drift subcommands; pure validated rule evaluation; deterministic JSON and Markdown reporting; explicit synthetic/real provenance; entered-cost reconciliation; named input and write errors; and atomic result/report writes. The labelled 200-record fixture finds all 120 planted cases with zero false positives and exactly reconciled entered illustrative costs. The installed CLI demo took a measured 0.609 seconds locally. Thirty tests cover the synthetic ground truth, five-record example, adversarial inputs, Unicode, determinism, corruption, errors and all commands. README, evidence and lessons document the honesty boundary and the pending two-week real-use improvement and verdict. No real trial data, savings estimates, network calls, GPU workloads or publication were used.
